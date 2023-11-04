@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    
+    
+  }
+  
+  .cont {
+    display: grid;
+    width: 615px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    
+
+  }
+  
+  .cont div {
+    width: 60px;
+    height: 60px;
+    border: 0.2px solid black;
+  }
+  
+  #p1{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgb(185, 236, 82);
+    position: relative;
+    border: 2px solid black;
+    left: -50px;
+    
+  }
+
+  
+   #diceCont {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    font-size: 2rem;
+    z-index: 99;
+  }
+  #diceBtn {
+    z-index: 99;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(75, 140, 197);
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+
+    
+    #diceBtn {
+      width: 200px;
+      margin-left: 20px;
+    };
+
+    #background-image {
+      height: 200px;
+      width: 200px;
+      background-image: url();
+      background-size: contain;
+
+
+    }
+  
