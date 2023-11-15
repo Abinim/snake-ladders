@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <style>
-      body {
-        background-image: url('background image.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    </style>
+    <div id="startPage">
+      <button id="startBtn" onclick="startGame()">PLAY</button>
+    </div>
+
+    <div id="gamePage">
+   
     <div class="snake-container">
       <div class="snake-text">SNAKES AND LADDERS</div>
-    </div>
+    
     <div id="diceCont">
       <p id="Green">TOM :</p>
       <p id="dice">0</p>
       <button id="diceBtn">ROLL ON</button>
     </div>
+  
     <div class="cont"></div>
     <img src="board1234-transformed.jpeg" alt="" />
+  
   </body>
   <script src="index.js"></script>
 </html>

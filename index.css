@@ -3,25 +3,62 @@
   padding: 0;
 }
 
+#startBtn {
+  padding: 29px 40px;
+  font-size: 100px;
+  cursor: pointer;
+  background-color: burlywood;
+  color: brown;
+  border: none;
+  border-radius: 51px;
+  text-align: center;
+  margin-top: 420px;
+  margin-left: -100px;
+  transform: rotate(-4.9deg);
+}
+
+#gamePage {
+  display: none;
+}
+p {
+  color: white;
+}
+
+.diceBtn {
+  padding: 30px 80px;
+  font-size: 100px;
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 51px;
+  text-align: center;
+  margin-top: 380px;
+  margin-left: -100px;
+  transform: rotate(-4.8deg);
+}
+
 body {
   display: grid;
   place-items: center;
   overflow: hidden;
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2px;
 }
-
 .cont {
   display: grid;
-  width: 600px;
+  width: 60px;
   grid-template-columns: repeat(10, 1fr);
   margin: 0px 0 0px 0;
   margin-top: 1px;
+  margin-bottom: -590px;
 }
 
 .cont div {
   width: 60px;
   height: 60px;
-  border: 0.2px solid black;
+  border: 0px solid white;
 }
 
 #p1,
@@ -30,18 +67,15 @@ body {
   height: 50px;
   border-radius: 100px;
   position: relative;
-
-  /* position: absolute; */
 }
 
 #p1 {
   position: relative;
   top: 0px;
   transition: all linear 0.5s;
-  /* top: 0; */
   left: -62px;
   z-index: 2;
-  background-image: url('jerry image.png');
+  background-image: url('jerry\ image.png');
   background-size: cover;
 }
 
@@ -58,10 +92,14 @@ body {
 img {
   position: relative;
   top: -615px;
-  left: 8px;
+  left: 0px;
   margin: 0;
   width: 615px;
   height: 615px;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 #diceCont {
   display: grid;
@@ -74,17 +112,16 @@ img {
 }
 #diceBtn {
   z-index: 99;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
-  background-color: greenyellow;
-  border: 3px solid white;
-  border-radius: 5px;
+  background-color: brown;
+  border: 3px white;
+  border-radius: 100px;
   width: 200px;
   height: 40px;
 }
 
 @media (max-width: 1250px) {
-  
   #diceCont {
     display: flex;
     place-items: none;
@@ -98,7 +135,6 @@ img {
   }
 }
 @media (max-width: 1250px) {
-  
   #diceCont {
     display: flex;
     place-items: none;
@@ -114,28 +150,34 @@ img {
 
 .snake-container {
   overflow: hidden;
-  }
+}
 
 .snake-container {
-justify-content: center;
-align-items: center;
-overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .snake-text {
-font-size: 45px;
-color: white;
-white-space: nowrap;
-animation: snake 9s linear infinite;
-font-weight: bold;
-margin-top: 25px;
+  font-size: 45px;
+  color: goldenrod;
+  white-space: nowrap;
+  animation: snake 9s linear infinite;
+  font-weight: bold;
+  margin-top: 25px;
 }
 
 @keyframes snake {
-0% {
+  0% {
     transform: translateX(100%);
-}
-100% {
+  }
+  100% {
     transform: translateX(-100%);
+  }
 }
+body {
+  background-image: url('background\ image.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
